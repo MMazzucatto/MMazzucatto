@@ -28,12 +28,12 @@ include_once("header.php");
   <div class="col-4">
     <label for="inputNumero" class="form-label">Número</label>
     <input type="number" name="numusu" class="form-control" id="inputNumero" placeholder="00" required>
-    <div class="col-5">
+  </div>
+    <div class="col-4">
     <label for="inputComple" class="form-label">Complemento</label>
     <input type="text" name="compusu" class="form-control" id="inputComple" placeholder="Casa 2/Bloco -A">
   </div>
-  </div>
-  <div class="col-md-6">
+  <div class="col-md-12">
     <label for="inputTipo" class="form-label">Tipo de usuário</label>
     <select id="inputTipo" name="tipousu" class="form-select">
       <option selected>Escolha...</option>
@@ -51,7 +51,7 @@ include_once("header.php");
     </div>
   </div>
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Criar</button>
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
   </div>
 </form>
 

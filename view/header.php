@@ -31,8 +31,7 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Pesquisar por Perfil</a></li>
-                            <li><a class="dropdown-item" href="#">Pesquisar por Código</a></li>
+                            <li><a class="dropdown-item" href="../view/visuUsuCod.php">Pesquisar por Código</a></li>
                             <li><a class="dropdown-item" href="../view/visuUsuNome.php">Pesquisar por Nome</a></li>
                             <li><a class="dropdown-item" href="../view/visuUsuEmail.php">Pesquisar por Email</a></li>
                         </ul>
@@ -42,14 +41,14 @@
                             Jogos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="../view/cadjogo.php">Cadastrar</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Pesquisar por Gênero</a></li>
-                            <li><a class="dropdown-item" href="#">Pesquisar por Código</a></li>
-                            <li><a class="dropdown-item" href="#">Pesquisar por Nome</a></li>
-                            <li><a class="dropdown-item" href="#">Pesquisar por Plataforma</a></li>
+                            <li><a class="dropdown-item" href="../view/visuJogoNome.php">Pesquisar por Nome</a></li>
+                            <li><a class="dropdown-item" href="../view/visuJogoGenero.php">Pesquisar por Gênero</a></li>
+                            <li><a class="dropdown-item" href="../view/visuJogoCodigo.php">Pesquisar por Código</a></li>
+                            <li><a class="dropdown-item" href="../view/visuJogoPlataforma.php">Pesquisar por Plataforma</a></li>
                         </ul>
                     </li>
                 </ul>

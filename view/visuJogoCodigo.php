@@ -1,8 +1,8 @@
 <?php
 
 include_once("../view/header.php");
-include_once("../model/conexao.php");
-include_once("../model/usuarioModel.php");
+include_once("../model/conexaoJogo.php");
+include_once("../model/jogoModel.php");
 
 ?>
 
@@ -11,10 +11,10 @@ include_once("../model/usuarioModel.php");
 
 <form action="#" method="Post" class="row row-cols-lg-auto g-3 align-items-center">
   <div class="col-12">
-    <label class="visually-hidden" for="inlineFormInputGroupUsername">Nome do usuario</label>
+    <label class="visually-hidden" for="inlineFormInputGroupUsername">Código do jogo</label>
     <div class="input-group">
-      <div class="input-group-text">Nome</div>
-      <input type="text" name="nomeUsu" class="form-control" id="inlineFormInputGroupUsername" placeholder="Nome do usuario">
+      <div class="input-group-text">Código</div>
+      <input type="text" name="codigojogo" class="form-control" id="inlineFormInputGroupUsername" placeholder="Codigo do jogo">
     </div>
   </div>
 
@@ -28,19 +28,18 @@ include_once("../model/usuarioModel.php");
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">codigo</th>
       <th scope="col">Nome</th>
-      <th scope="col">Email</th>
-      <th scope="col">Fone</th>
+      <th scope="col">Gênero</th>
+      <th scope="col">Código</th>
     </tr>
   </thead>
   <tbody>
   <?php
-$nomeusu = isset ($_POST["nomeUsu"])? $_POST["nomeUsu"]:"" ;
+$codigojogo = isset ($_POST["codigojogo"])? $_POST["codigojogo"]:"" ;
 
-if($nomeusu){
+if($codigojogo){
 
-$dado = visuUsuarioNome($conn,$nomeusu);
+$dado = visuJogoCodigo($conn,$codigojogo);
 
 foreach($dado as $nomeUsuarios): 
 ?>
